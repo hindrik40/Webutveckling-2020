@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout uppgift 2</title>
+
+    <link rel="stylesheet" href="css/style5_2.css">
+
+    <style>
+        body {
+            background-color: rgba(32, 51, 138, 0.2);
+            color: black;
+        }
+        /* 950px bred */
+        
+        @media screen and (max-width: 950px) {
+            body {
+                background-color: rgba(32, 51, 138, 0.2);
+                color: white;
+            }
+        }
+        /* On screens that are 600px wide or less, the background color is olive */
+        
+        @media screen and (max-width: 700px) {
+            body {
+                background-color: rgba(70, 170, 148, 0.3);
+                color: white;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header> <img src="images/lamm.jpeg" alt="lamm" width="100%" height="auto">
+
+        <span class="transparent-light center"><strong> Livet är inte så dumt!</strong></span>
+    </header>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html ">Index</a></li>
+            <li><a href="intressen.html">Intressen</a></li>
+            <li><a href="landskap.html">Landskap</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Ögonblick </h2>
+                <i> Döda lamm, efterbörden blänker i solen. Plötsligt gömmer sig solen,kanske sörjer hon? Döden smög
+                    förbi med lötet att komma åter.</i> <br> <strong> En dikt jag skrivit</strong>
+                <img src="images/dead.jpeg" alt="solen" width="550" height="600">
+
+            </article>
+
+        </main>
+        <aside>
+            <h1>Min hembygd Halland på gränsen till Skåne</h1>
+            <p>
+                Människor har vistats i Halland sedan inlandsisen smälte bort för drygt 10.000 år sedan. <br> Detta vittnar oräkneliga stenåldersboplatser, stenkammargravar, bronsålderns högar. <br> Men också rösen och järnålderns stora gravfält med sina
+                resta stenar.
+            </p>
+
+            <h2> Hallands historia under 1000år</h2>
+            <p>
+                <strong> I Halland finns över 15.000 fasta fornlämningar registrerade </strong> i Riksantikvarieämbetets fornminnesregister. Ett exempel, Hagbards galge är en fornlämning i Asige socken i Falkenbergs kommun i Halland, troligen utförd under
+                bronsåldern. Fornlämningen består av totalt fyra bautastenar, i par om två, varav det är de två närmast vägen som kallas Hagbards galge. På stenarna finns olika ristningar, dels så kallade solristningar, upptäckta på 1700-talet, dels skepp
+                som upptäckts i modern tid. <br><br> Namnet kommer från en fornnordisk vandringssägen om Hagbard och Signe. Sägnen börjar med att en viking från Trondheim, Hagbard, ger sig ut på vikingatåg. Utanför Hallands kust möts han av en stor flotta
+                under ledning av den lokale kungen Sigvard. <br><br> De strider, men utan att någon vinner och sluter sedan fred. Sigvard bjuder hem Hagbard som då möter kungens dotter, Signe. De blir kära, men på grund av den fiendskap som sedan länge
+                funnits mellan respektive släkter kan de inte gifta sig. Hagbard försöker senare förklädd ta sig in till Signe, men grips. Han döms vid tinget i Asige till döden. <br><br> Signe hade lovat att följa sin älskade i döden och Hagbard bestämde
+                sig för att pröva hennes trohet. <br><br> Som sin sista önskan bad han därför att man först skulle hissa upp hans mantel i galgen. När Signe ser manteln och tror att Hagbard hänger där sätter hon eld på sitt slott och bränner sig själv
+                inne med sina tärnor. När Hagbard ser röken från slottet går han lugnt i döden.[1] Sägnen finns spridd över hela Norden, men området är det enda där materiella ting har namn från sägnen.
+
+
+            </p>
+            <article>
+                <h2>Halländskt liv</h2>
+
+
+
+                <p><strong> Läs mer om hur Hallänningarna har levat! Klicka på länken nedan.</strong><br>
+                    <a href="https://www.hn.se/livets-g%C3%A5ng/s%C3%A5-levde-hall%C3%A4nningarna-f%C3%B6r-hundra-%C3%A5r-sedan-1.3337539">
+
+                        Så levde halläningarna för hundra år sedan</a> Om du vill skriva en kommentar kring informationen på hemsidan skriv i textfältet nedan!</p>
+            </article>
+            <form action="landskap.html" method="post">
+                <label for="email">Fyll i din email här:</label>
+                <input type="text" id="email" name="email" required>
+                <input type="submit">
+
+                <label>Skriv här dina kommentarer här</label>
+                <input type="text" name="name" id="name" required />
+                <input type="submit">
+
+
+                <p id="mail_link">
+                    <!-- Mailadress och intresseförfrågan -->
+                    Här är min mailadress om du vill kontakta mig och få ytterligare information:
+                    <a href="mailto:hindrik.ounpuu@lightperspective.se" target="_top">
+                       Klicka på länken
+
+                        
+                    </a>
+                </p>
+            </form> <br><br>
+            <h2>Orter i Halland</h2>
+            <label for="orter">Välj en ort:</label>
+
+            <select name="orter" id="orter">
+                <option value="Laholm">Laholm</option>
+                <option value="Falkenberg">Falkenberg</option>
+                <option value="Varberg">Varberg</option>
+                <option value="Kungsbacka">Kungsbacka</option>
+                <input type="submit" name="submit" id="submit">
+            </select><br><br>
+            </form>
+
+            <img src="images/mosse.jpg" alt="Bild på en mosse" width="400" height="300">
+            <div><i>En mosse nära vårt hus som faktisk också har lite hjortron!</i></div>
+
+            <img src="images/bokskog.jpg" alt="Bokskog" width="400" height="300">
+
+            <div><i>Vår bokskog!</i> </div>
+        </aside>
+    </div>
+
+
+
+    <footer><img src="images/skolan.jpeg" alt="logo" width="30" height="50">Hindrik Öunpuu Deijenberg Distanskursen Webprogrammering>
+    </footer>
+</body>
+
+</html>

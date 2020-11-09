@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightperspective.se</title>
-    <link rel="icon" type="image/png" href="http://www.google.com/s2/favicons?domain=jacinto.design">
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3e741ec8c1.js" crossorigin="anonymous"></script>
+    <title>CSS layout uppgift 2</title>
+    <link rel="stylesheet" href="css/style5_2.css">
+    <style>
+        body {
+            background-color: rgba(32, 51, 138, 0.2);
+            color: black;
+        }
+        /*Ändrar färg när sidan når brytpunkterna */
+        
+        @media screen and (max-width: 950px) {
+            body {
+                background-color: rgba(32, 51, 138, 0.2);
+                color: white;
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            body {
+                background-color: rgb(70, 170, 148);
+                color: white;
+            }
+        }
+    </style>
+    
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <i class="fab fa-500px"></i>
-    <i class="fas fa-car-crash"></i>
-    <!----script-->
-    <script src="script.js"></script>
+    <header>  <img src="images/lamm.jpeg" alt="lamm" width="100%" height="100%">
+        <!-- Här testade jag ett koncept jag hittade då fler hade fått samma felmarkering. <div id="logo"><img src="/images/lamm.jpeg" alt="lamm" style="width:100%;" /></div>-->
+
+        <span class="transparent-light center"><strong> Livet är inte så dumt!</strong></span>
+    </header>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html ">Index</a></li>
+            <li><a href="intressen.html">Intressen</a></li>
+            <li><a href="landskap.html">Landskap</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Livet </h2>
+                <i> Lamm får, hundpromenad kapa ved, stilla sysslor. <br> Vanan förbereder språnget! </i> <br> <strong> En dikt jag skrivit</strong>
+                <img src="images/ved.jpeg" alt="vedhuggning" width="500" height="700">
+
+            </article>
+
+        </main>
+        <aside>
+            <h1>Om mig!</h1>
+            <P> <strong> Vem är jag? </strong>Jag är oerhört vetgirig och nyfiken. Har haft många yrken i mitt liv, bagare, svetsare, hamnarbetare, truckförare mm Utbildade mig sent till data och elektronikingeniör i Linköping. Arbetade därefter på Ericsson
+                med hårdvarukonstruktion och utvärdering av monteringsmaskiner. <br><br> att det ingick en kort kurs i programmering så blev det inte mer i mitt arbete än en kort period där jag testade Ericssons AXE system innan jag hamnade centralt på
+                Ericsson för att forska och implementera ett fungerande mjukvarukoncept fört leverans, betalning och implementering.<br><br> Därefter startade jag och min fru ett företag som arbetade med strategier, stöd till ledningsgrupper och affärscoachning,
+                skrev ett antal böcker kring ledarskap och gruppdynamik. Jobbade också ett par år som konsultrektor i en gymnasieskola.<br><br> Nu har vi börjat aveckla vårt företag och jag vill starta en ny karriär som frontendprogrammerare och om allt
+                går bra även inom AI sektorn i framtiden.
+            </P>
+            <p> <img src="images/jag.JPG" alt="Jag fotad av min fru" width="500" height="600"> </p>
+            <p> <i>Jag Hindrik fotad av min fru. Taget i landskapet Halland.</i></p>
+            <blockquote> "Upp flyger orden men tanken står stilla"
+                <br> <cite>Havamal</cite>
+            </blockquote>
+
+
+        </aside>
+
+    </div>
+
+    <footer><img src="images/skolan.jpeg" alt="logo" width="30" height="50">Hindrik Öunpuu Deijenberg Distanskursen Webprogrammering>
+    </footer>
 </body>
 
 </html>
