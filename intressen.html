@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout_uppgift 2</title>
+    <link rel="stylesheet" href="css/style5_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(32, 51, 138, 0.2);
+            color: black;
+        }
+        /* On screens that are 992px wide or less, the background color is blue */
+        
+        @media screen and (max-width: 900px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+        }
+        /* On screens that are 600px wide or less, the background color is olive */
+        
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+                color: white;
+            }
+        }
+        
+        p::first-letter {
+            font-size: 200%;
+            color: black;
+        }
+        
+        h1::first-letter {
+            font-size: 200%;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header><img src="images/lamm.jpeg" alt="lamm" width="100%" height="auto">
+
+        <span class="transparent-light center">Livet är inte så dumt!</span>
+    </header>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="intressen.html">Intressen</a></li>
+            <li><a href="landskap.html">Landskap</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <h1> Solen</h1>
+            <p style="color:red;">
+                <strong> Solen </strong> är min gud och djävul. <br> När den inte lyser vill jag bara gå och lägga mig. När det är varmt kryper jag undan. Finns det någon jämvikt?
+            </p>
+            <img src="images/solen.jpeg" alt="solen" width="400" height="700">
+
+        </main>
+        <aside>
+            <h2 style="color:red;">Mina intressen ett smakprov!</h2>
+            <p> <i> Jag är oerhört intresserad av hundar och att träna dom. <br> Förut om det så har jag många andra intressen såsom växter, <br> akvariefiskar, programmering,teckna och måla mm</i> </p>
+
+            <p>För att sammanfatta några av mina intressen</p>
+            <div>
+                <ul style="list-style: none;">
+                    <li>Hundar</li>
+                    <li>Växter</li>
+                    <li>fiskar</li>
+                </ul>
+                <p> <strong> För att tydligöra här kommer intressena i nummerordning </strong> </p>
+                <div>
+                    <ol type="1" style="list-style: none;">
+                        <li>Hundar</li>
+                        <li>Programmering</li>
+                        <li>Växter</li>
+                        <li>fiskar</li>
+                    </ol>
+                </div>
+            </div>
+
+           <h3> Vackra fiskar </h3>
+               <p> En video måste vi ha med, här med några av mina favoriter <br> </p>
+            <video width="600" height="400" controls>
+        <source src="images/Tropheus.mp4" type="video/mp4">
+
+    </video><br><br>
+
+            <!-- Här matar jag in bilderna -->
+            <!----<div class="row">-Fel på grund av ett css element som inte används-->
+            <br>
+            <img src="images/IMG_20200619_124018.jpg " alt="Storpudel" width="500" height="700">
+
+            <div><i>Vår kungspudel Rani. Då hon är en tik får hon heta Rani som betyder drottning. <br> En drottningpudel
+            blir det
+            då självklart!</i></div>
+            <br>
+            <div class="row ">
+                <img src="images/IMG_20200710_104706.jpg " alt="Spansk vattenhund " width="400" height="300">
+
+
+                <i>Vår spanska vattenhund Sanchia. Hon är spansk och vill helst bada i medelhavstemperatur!</i>
+
+
+                <img src="images/FB_IMG_1551945750936.jpg " alt="Welsh Corgi cardigan " width="400" height="300">
+
+                <i>Vår walesare Saga ättling till de walsiska drakarna.En wesh corgi cardigan!</i>
+
+                <a href="https://www.hundkamraten.com/ ">Läs mer om våra hundar!</a>
+            </div>
+
+        </aside>
+    </div>
+
+
+
+    <footer><img src="images/skolan.jpeg" alt="logo" width="30" height="50">Hindrik Öunpuu Deijenberg Distanskursen Webprogrammering>
+    </footer>
+</body>
+
+</html>
